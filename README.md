@@ -1,0 +1,3 @@
+# SwiftSandboxes
+
+This repo holds a bunch of apps that I use to study swift. I use apps instead of playgrounds because playgrounds seem to act a little funny at times. Sometimes when I am typing in a playground and pause for a second the playground tries to compile the code and it takes the cursor out of the editor, then when I try to keep typing it doesn't work, which is super frustrating. So I just use the viewDidLoad method to sandbox all the code. Eventually I will start adding functionality to the app to learn more complex stuff, but for now I just write a little code to learn a topic in swift.
