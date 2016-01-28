@@ -6,6 +6,11 @@
 //  Copyright © 2016 Nicholas Nelson. All rights reserved.
 //
 //  Demonstrate properties
+//
+//  different kinds of properties:
+//  stored, lazy stored, computed
+//  computed properties can be provided by classes, structs, and enumerations
+//  stored properties are only provided by classes and structs
 
 import UIKit
 
@@ -29,6 +34,14 @@ class ViewController: UIViewController {
         print("initial square center: ", terminator:""); print(initialSquareCenter)
         square.center = Point(x: 15.0, y: 15.0) // calls the setter of center
         print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
+        
+        // cannot set read-only computed value
+        print("readOnlyCenter: \(square.readOnlyCenter)")
+        //square.readOnlyCenter = Point(x: 20.0, y: 20.0) // compile error
+        
+        let fourByFiveByTwo = Cuboid(width: 4.0, height: 5.0, depth: 2.0)
+        print("the volume of fourByFiveByTwo is \(fourByFiveByTwo.volume)")
+        //fourByFiveByTwo.volume = 50.0 // compile error
         
         var rectangle = Rect() // declare then initialize later
         rectangle.origin = Point(x: 0.0, y: 0.0)
@@ -57,6 +70,32 @@ class ViewController: UIViewController {
         // the DataImporter instance for hte importer property has not been created yet
         print(manager.importer.fileName)
         // the DataImporter instance for hte importer property has now been created
+        
+        // property observers
+        let stepCounter = StepCounter()
+        stepCounter.totalSteps = 200
+        stepCounter.totalSteps = 360
+        stepCounter.totalSteps = 896
+        stepCounter.totalSteps = 400
+        
+        // type properties
+        print("print type property: \(TypeProperties.stringTypeProperty)")
+        print("\(TypeProperties.overrideableComputedTypeProperty)")
+        
+        // stereo system with type properties
+        var leftChannel = AudioChannel()
+        var rightChannel = AudioChannel()
+        print(AudioChannel.maxInputLevelForAllChannels)
+        leftChannel.currentLevel = 7
+        print(leftChannel.currentLevel)
+        print(AudioChannel.maxInputLevelForAllChannels)
+        rightChannel.currentLevel = 8
+        print(rightChannel.currentLevel)
+        print(AudioChannel.maxInputLevelForAllChannels)
+        leftChannel.currentLevel = 12
+        print(leftChannel.currentLevel)
+        print(AudioChannel.maxInputLevelForAllChannels)
+        
     }
 
     override func didReceiveMemoryWarning() {

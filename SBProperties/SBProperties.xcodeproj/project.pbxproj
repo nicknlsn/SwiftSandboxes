@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0123377F1C57E2010098C53F /* Cuboid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123377E1C57E2010098C53F /* Cuboid.swift */; };
+		012337811C57E3530098C53F /* StepCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012337801C57E3530098C53F /* StepCounter.swift */; };
+		012337831C57ED880098C53F /* TypeProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012337821C57ED880098C53F /* TypeProperties.swift */; };
 		0174C25E1C53654600DC338D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174C25D1C53654600DC338D /* AppDelegate.swift */; };
 		0174C2601C53654600DC338D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174C25F1C53654600DC338D /* ViewController.swift */; };
 		0174C2631C53654600DC338D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0174C2611C53654600DC338D /* Main.storyboard */; };
@@ -17,9 +20,13 @@
 		0174C2741C54599B00DC338D /* NamedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174C2731C54599B00DC338D /* NamedShape.swift */; };
 		0174C2781C545C9000DC338D /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174C2771C545C9000DC338D /* Struct.swift */; };
 		0174C27A1C54668000DC338D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174C2791C54668000DC338D /* Data.swift */; };
+		01BAF0091C5A801B0018B87D /* AudioChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BAF0081C5A801B0018B87D /* AudioChannel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0123377E1C57E2010098C53F /* Cuboid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cuboid.swift; sourceTree = "<group>"; };
+		012337801C57E3530098C53F /* StepCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCounter.swift; sourceTree = "<group>"; };
+		012337821C57ED880098C53F /* TypeProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeProperties.swift; sourceTree = "<group>"; };
 		0174C25A1C53654600DC338D /* SBProperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBProperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0174C25D1C53654600DC338D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0174C25F1C53654600DC338D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +39,7 @@
 		0174C2731C54599B00DC338D /* NamedShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamedShape.swift; sourceTree = "<group>"; };
 		0174C2771C545C9000DC338D /* Struct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 		0174C2791C54668000DC338D /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		01BAF0081C5A801B0018B87D /* AudioChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioChannel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,10 @@
 				0174C2731C54599B00DC338D /* NamedShape.swift */,
 				0174C2771C545C9000DC338D /* Struct.swift */,
 				0174C2791C54668000DC338D /* Data.swift */,
+				0123377E1C57E2010098C53F /* Cuboid.swift */,
+				012337801C57E3530098C53F /* StepCounter.swift */,
+				012337821C57ED880098C53F /* TypeProperties.swift */,
+				01BAF0081C5A801B0018B87D /* AudioChannel.swift */,
 			);
 			name = StructsAndClasses;
 			sourceTree = "<group>";
@@ -164,8 +176,12 @@
 				0174C2701C53659900DC338D /* Rectangle.swift in Sources */,
 				0174C2741C54599B00DC338D /* NamedShape.swift in Sources */,
 				0174C2601C53654600DC338D /* ViewController.swift in Sources */,
+				0123377F1C57E2010098C53F /* Cuboid.swift in Sources */,
+				012337831C57ED880098C53F /* TypeProperties.swift in Sources */,
 				0174C25E1C53654600DC338D /* AppDelegate.swift in Sources */,
 				0174C2721C5365C300DC338D /* Shape.swift in Sources */,
+				01BAF0091C5A801B0018B87D /* AudioChannel.swift in Sources */,
+				012337811C57E3530098C53F /* StepCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +329,7 @@
 				0174C26E1C53654600DC338D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
