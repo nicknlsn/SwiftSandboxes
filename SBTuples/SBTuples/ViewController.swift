@@ -75,11 +75,11 @@ class ViewController: UIViewController {
         
         // no way to know how many items are in a tuple because a tuple is like a unique object with no methods
 //        print(aTuple.size)
-        // loop through a tuple?
+//         loop through a tuple?
 //        for item in aTuple {
 //            print(item)
 //        }
-        // for these applications a different data type would be better
+//        // for these applications a different data type would be better
         
         // can access by index but not in a loop
 //        print(aTupleOfTuples.0.0, terminator:""); print(aTupleOfTuples.0.1, terminator:"")
