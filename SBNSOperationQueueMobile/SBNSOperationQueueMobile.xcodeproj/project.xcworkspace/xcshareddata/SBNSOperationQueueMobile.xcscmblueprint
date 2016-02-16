@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6FA321506CEC966F22E719055BF546C29BC47A24",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6FA321506CEC966F22E719055BF546C29BC47A24" : 0,
+    "D506E6A1F870D78C45645A79B42C86125862102D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "03FA5C9F-832B-4770-B0E5-6214F702422F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6FA321506CEC966F22E719055BF546C29BC47A24" : "swiftSandboxes\/",
+    "D506E6A1F870D78C45645A79B42C86125862102D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SBNSOperationQueueMobile",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SBNSOperationQueueMobile\/SBNSOperationQueueMobile.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:nicknlsn\/SwiftSandboxes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6FA321506CEC966F22E719055BF546C29BC47A24"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:nicknlsn\/xcodeprojects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D506E6A1F870D78C45645A79B42C86125862102D"
+    }
+  ]
+}

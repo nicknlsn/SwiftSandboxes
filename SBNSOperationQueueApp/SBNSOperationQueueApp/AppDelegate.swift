@@ -1,27 +1,30 @@
 //
-//  ViewController.swift
-//  SBNSOperationQueueMobile
+//  AppDelegate.swift
+//  SBNSOperationQueueApp
 //
-//  Created by Nicholas Nelson on 2/4/16.
+//  Created by Nicholas Nelson on 2/9/16.
 //  Copyright © 2016 Nicholas Nelson. All rights reserved.
 //
 
-import UIKit
+import Cocoa
 import Foundation
-
-let queue = NSOperationQueue()
 
 class BackgroudOperations: NSOperation {
     override func main() {
+        // do something here
         print("hello from background")
     }
 }
 
-class ViewController: UIViewController {
+let queue = NSOperationQueue()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+@NSApplicationMain
+class AppDelegate: NSObject, NSApplicationDelegate {
+
+    @IBOutlet weak var window: NSWindow!
+
+
+    func applicationDidFinishLaunching(aNotification: NSNotification) {
         let backgroundOperation1 = BackgroudOperations()
         queue.addOperation(backgroundOperation1)
         backgroundOperation1.queuePriority = .Normal
@@ -44,20 +47,32 @@ class ViewController: UIViewController {
         
         demoStuff()
         
-        print("background operations initiated")
+        print("all background operations initiated")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func applicationWillTerminate(aNotification: NSNotification) {
+        // Insert code here to tear down your application
     }
 
     func demoStuff() -> () {
+        // happy path, add completion block before adding operation to queue
         let getInBackground = BackgroudOperations()
-        queue.addOperation(getInBackground)
         getInBackground.completionBlock = {
             print("hello 3")
         }
+        queue.addOperation(getInBackground)
+        
+        // sad path, add completion block after adding operation to queue
+        let getInBackground2 = BackgroudOperations()
+        queue.addOperation(getInBackground2)
+        var number = 0
+        while number < 1000000000 {
+            number += 1
+        }
+        getInBackground2.completionBlock = {
+            print("hello 4")
+        }
     }
+    
 }
 
