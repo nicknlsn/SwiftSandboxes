@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         letOutlet.text = letable
         
         demoMethod()
+        demoOptionals()
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,5 +79,27 @@ class ViewController: UIViewController {
         textViewOutlet.text = output
     }
     
+    func demoOptionals() {
+        // optionals
+        var anInt = Int?() // optional int
+        print(anInt)
+//        print(anInt!) // this will throw EXC_BAD_INSTRUCTION during runtime
+        
+        let maybeANumber = "123"
+        let convertedMaybeANumber = Int(maybeANumber)
+        print("convereted number: \(convertedMaybeANumber!)")
+        let probablyNotANumber = "Hello, world!"
+        let notConverted = Int(probablyNotANumber)
+        print("probably not converted: \(notConverted)") // prints nil, or if i try to unwrap it is a fatal error
+        
+        for _ in 1...10 {
+            let randomNumber = arc4random_uniform(10)
+            print(randomNumber)
+            if randomNumber % 2 == 0 {
+                anInt = Int(randomNumber)
+                print(anInt!) // this can be unwrapped because it will have a number in it
+            }
+        }
+    }
+    
 }
-

@@ -96,6 +96,11 @@ class ViewController: UIViewController {
         print(leftChannel.currentLevel)
         print(AudioChannel.maxInputLevelForAllChannels)
         
+        // computed properties with my own code
+        let travel = Travel(distance: 40, tripTime: 0.6)
+        print("Average travel speed: \(travel.rate) mph")
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

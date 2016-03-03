@@ -12,7 +12,7 @@ import Foundation
 class BackgroudOperations: NSOperation {
     override func main() {
         // do something here
-        print("hello from background")
+        print("pushed into the queue")
     }
 }
 
@@ -66,9 +66,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let getInBackground2 = BackgroudOperations()
         queue.addOperation(getInBackground2)
         var number = 0
-        while number < 1000000000 {
-            number += 1
-        }
+//        while number < 1000000000 {
+//            number += 1
+//        }
         getInBackground2.completionBlock = {
             print("hello 4")
         }

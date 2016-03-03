@@ -89,7 +89,33 @@ class ViewController: UIViewController {
 //                print(aTupleOfTuples.i.j)
 //            }
 //        }
-
+        
+        // functions that take multiple parameters can be called and given a tuple with all the parameters
+        let yetAnotherTuple = ("hello friend", anInt: 50)
+        print(functionThatTakesTwoParameters(yetAnotherTuple))
+        
+        //
+        let anotherTuple = functionThatTakesTuple(("hello", 29))
+        print(anotherTuple)
+        
+        // if more than one parameter, you need to label second parameter
+        let (firstTuple, secondTuple) = functionThatTakesTwoTuples(("Hello, ", 18), ("world!", 19))
+        print(firstTuple)
+        print(secondTuple)
+    }
+    
+    func functionThatTakesTwoParameters(aString: String, anInt: Int) -> (String, Int) {
+        return (aString, anInt)
+    }
+    
+    // takes a tuple, returns a tuple
+    func functionThatTakesTuple(aTuple:(String, Int)) -> (String, Int) {
+        return aTuple
+    }
+    
+    // takes two tuples, returns a double tuple, underscore in place of external name so we don't have to label the call
+    func functionThatTakesTwoTuples(firstTuple: (String, Int), _ secondTuple: (String, Int)) -> ((String, Int), (String, Int)) {
+        return (firstTuple, secondTuple)
     }
     
     // a simple method to make a GET request to a url and return the status code and the status message

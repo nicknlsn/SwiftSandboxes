@@ -20,6 +20,7 @@
 		0174C2741C54599B00DC338D /* NamedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174C2731C54599B00DC338D /* NamedShape.swift */; };
 		0174C2781C545C9000DC338D /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174C2771C545C9000DC338D /* Struct.swift */; };
 		0174C27A1C54668000DC338D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174C2791C54668000DC338D /* Data.swift */; };
+		01805B631C7396C5008402FF /* ComputedProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01805B621C7396C5008402FF /* ComputedProperties.swift */; };
 		01BAF0091C5A801B0018B87D /* AudioChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BAF0081C5A801B0018B87D /* AudioChannel.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		0174C2731C54599B00DC338D /* NamedShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamedShape.swift; sourceTree = "<group>"; };
 		0174C2771C545C9000DC338D /* Struct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 		0174C2791C54668000DC338D /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		01805B621C7396C5008402FF /* ComputedProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputedProperties.swift; sourceTree = "<group>"; };
 		01BAF0081C5A801B0018B87D /* AudioChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioChannel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				012337801C57E3530098C53F /* StepCounter.swift */,
 				012337821C57ED880098C53F /* TypeProperties.swift */,
 				01BAF0081C5A801B0018B87D /* AudioChannel.swift */,
+				01805B621C7396C5008402FF /* ComputedProperties.swift */,
 			);
 			name = StructsAndClasses;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0174C27A1C54668000DC338D /* Data.swift in Sources */,
+				01805B631C7396C5008402FF /* ComputedProperties.swift in Sources */,
 				0174C2781C545C9000DC338D /* Struct.swift in Sources */,
 				0174C2701C53659900DC338D /* Rectangle.swift in Sources */,
 				0174C2741C54599B00DC338D /* NamedShape.swift in Sources */,
